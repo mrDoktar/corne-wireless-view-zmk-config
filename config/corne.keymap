@@ -7,6 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
 
 
 / {
@@ -31,8 +34,8 @@
 
             label = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P      &trans
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &trans   &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P      &sv_ao
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &sv_oe   &sv_ae
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
                          &kp LGUI  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp RALT
             >;
