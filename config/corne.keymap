@@ -88,7 +88,7 @@
             label = "Lower";
             bindings = <
 &kp ESC                &kp EXCLAMATION        &kp AT_SIGN            &kp HASH   &kp LA(N4)  &kp PERCENT    &kp RS(N6)    &kp LA(N7)      &kp LA(N8)      &kp LA(N9)            &kp RIGHT_PARENTHESIS  &kp RS(MINUS)
-&kp LCTRL              &kp RA(NUMBER_2)       &kp NON_US_BACKSLASH   &kp EQUAL  &trans      &trans         &kp MINUS     &kp AMPERSAND   &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp LS(COMMA)          &kp GRAVE
+&kp LCTRL              &kp RA(NUMBER_2)       &kp BACKSLASH          &kp EQUAL  &trans      &trans         &kp MINUS     &kp AMPERSAND   &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp LS(COMMA)          &kp GRAVE
 &bhm LEFT_SHIFT GRAVE  &kp LS(RIGHT_BRACKET)  &kp LA(RIGHT_BRACKET)  &trans     &trans      &trans         &kp QUESTION  &kp LA(LS(N7))  &kp LA(LS(N8))  &kp LA(LS(N9))        &kp LS(DOT)            &kp LS(GRAVE)
                                                                      &kp LGUI   &kp RET     &trans         &trans        &kp SPACE       &kp RALT
             >;
