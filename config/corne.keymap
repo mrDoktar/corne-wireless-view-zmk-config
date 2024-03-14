@@ -85,12 +85,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ———————————————————————————————————   —————————————————————————————————
-            // | ESC     | q | w |  e  |  r  |  t  |   |  y  |  u  |  i  | o | p |  å  |
-            // | CTRL    | a | s |  d  |  f  |  g  |   |  h  |  j  |  k  | l | ö |  ä  |
-            // | SFT/TAB | z | x |  c  |  v  |  b  |   |  n  |  m  |  ,  | . | - | BKS |
-            //                 | GUI | ENT | RSE |   | LWR | SPC | ALT |
-            //                 ———————————————————   ———————————————————
+            // —————————————————————————————————   —————————————————————————————————
+            // | ESC | q | w |  e  |  r  |  t  |   |  y  |  u  |  i  | o | p |  å  |
+            // | CTRL| a | s |  d  |  f  |  g  |   |  h  |  j  |  k  | l | ö |  ä  |
+            // | TAB | z | x |  c  |  v  |  b  |   |  n  |  m  |  ,  | . | - | BKS |
+            //               | GUI | ENT | RSE |   | LWR | SPC | ALT |
+            //               ———————————————————   ———————————————————
 
             label = "Base";
             bindings = <
@@ -136,6 +136,13 @@
         };
 
         function_layer {
+            // ——————————————————————————————————   —————————————————————————————————————
+            // | F1 | F2 | F3 |  F4 |  F5 |  F6 |   |  F7 |  F8  |  F9  | F10 | F11 | F12 |
+            // |    | :w |    |     |     |     |   | pre | vol+ | vol- | nex |     |     |
+            // |    |    |    |     |     |     |   |     | MUTE | PLAY |     |     |     |
+            //                | GUI | ENT | LWR |   | RSE | SPC  | ALT  |
+            //                ———————————————————   —————————————————————
+            //
             bindings = <
 &kp F1  &kp F2      &kp F3                &kp F4                &kp F5                &kp F6    &kp F7          &kp F8             &kp F9            &kp F10     &kp F11  &kp F12
 &trans  &vim_write  &kp LS(LG(NUMBER_4))  &trans                &trans                &trans    &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &trans   &trans
