@@ -6,12 +6,13 @@
 
 #define HOST_OS 2
 
-#include "helper.h"
-#include "./keypos_def/keypos_36keys.h"
-#include "./international_chars/swedish.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+
+#include "helper.h"
+#include "./keypos_def/keypos_36keys.h"
+#include "./international_chars/swedish.dtsi"
 
 &mt { tapping-term-ms = <400>; };
 
