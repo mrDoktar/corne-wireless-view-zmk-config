@@ -165,12 +165,12 @@
             label = "Function";
         };
 
-        layer_4 {
+        number_layer {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp EQUAL
 &none  &none  &none  &none  &none  &none    &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none
 &none  &none  &none  &none  &none  &none    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
-                        &none  &none  &none    &tog 1        &none        &none
+                        &none  &none  &none    &tog 0        &none        &none
             >;
         };
     };
