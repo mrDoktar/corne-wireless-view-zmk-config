@@ -8,13 +8,12 @@
 
 #define MO_TOG(layer) &mo_tog layer layer
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-
 #include "helper.h"
 #include "./keypos_def/keypos_36keys.h"
 #include "./international_chars/swedish.dtsi"
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 &mt { tapping-term-ms = <400>; };
 
@@ -42,6 +41,11 @@
             key-positions = <37 40>;
             timeout-ms = <100>;
             layers = <0>;
+        };
+
+        function_layer {
+            bindings = <&mo 3>;
+            key-positions = <38 39>;
         };
     };
 
@@ -170,17 +174,10 @@
 &none  &none  &none  &none  &none  &none    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp EQUAL
 &none  &none  &none  &none  &none  &none    &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none
 &none  &none  &none  &none  &none  &none    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
-                        &none  &none  &none    &to 0        &none        &none
+                     &none  &none  &none    &to 0         &none         &none
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        BothLowerAndRaise {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
