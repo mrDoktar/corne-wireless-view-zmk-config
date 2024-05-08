@@ -174,7 +174,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp EQUAL
 &trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp BACKSPACE
-                        &trans  &trans  &to 0     &to 0         &trans        &trans
+                        &trans  &trans  &to 0     &to 2         &trans        &trans
             >;
 
             label = "Number";
